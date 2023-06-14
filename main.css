@@ -1,0 +1,74 @@
+*{
+    font-family: 'Jacques Francois', serif;
+    text-decoration: none;
+    margin: 0px 0px;
+    
+}
+
+.letraBranca{
+    color: white;
+}
+
+.brasaoetitulo{
+    background-image: url(images/capa.png);
+    background-repeat: no-repeat;
+    height: 644px;
+    display: grid;
+    grid-template-areas:
+      "tituloDaPagina brasaoCentro botaoExAluno botaoVisitante botaoAlunos botaoIngresso"
+      ". brasaoCentro brasaoCentro brasaoCentro brasaoCentro brasaoCentro";
+    
+    grid-template-rows: 100px 100px ; 
+    grid-template-columns: 30% 10% 10% 10% 10% 10% 10%; 
+    grid-gap: 16px;
+    
+}
+
+#tituloDaPagina{
+    color: white;
+}
+#botoesHeader{
+   
+    width: 400px;
+    display: flex;
+
+}
+
+#linksDeInfo{
+   
+    width: 1280px;
+    display: grid;
+    grid-template-rows: 80px ; 
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 32px;
+    align-items: center;
+    background-color: #28555C;
+    font-size: 24px;
+    color: white;    
+}
+
+
+#brasaoCentro
+{
+    
+}
+
+#botaoExAluno{
+    
+}
+
+#botaoVisitante{
+    
+}
+
+#botaoAlunos{
+    
+}
+
+#botaoIngresso{
+    
+}
+
+#tituloDaPagina{
+    
+}
