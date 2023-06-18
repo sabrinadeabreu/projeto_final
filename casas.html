@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html>
+
+<!-- Padrao de Cabecalho em todas as Paginas -->
     <head>
         <title>Hogwarts School</title>
-        <link rel="shortcut icon" href="faviconHP.png">
-        <h1>Hogwarts School</h1>
+        <link rel="shortcut icon" href="icon_hogwarts.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
     </head>
 
     <body>
         <header>
-            <img src="images/brasao.png" alt="brasao header"/>        
-            <span>
-                <span><button><img src="images/bars.png" alt="icone menu"/> Menu </button></span>
-                <ul>
-                    <li>Home</li>
-                    <li>Sobre</li>
-                    <li>Disciplinas</li>
-                    <li>Professores</li>
-                    <li>Casas</li>
-                    <li>Quadribol</li>
-                    <li>Eventos</li>
-                    <li>Notícias</li>
-                </ul>
-            </span>
-            
-            <span><a href="">Ex-aluno</a></span>
-            <span><a href="">Visitante</a></span>
-            <span><a href="">Alunos</a></span>
-            <span><a href="ingresso.html"><button>Ingresso</button></a></span>
-        </header>
+            <div class="brasaoetitulo">
+                <div id="botaoMenu">
+                    <button id="iconeMenu"><img src="images\menu.png" alt="icone menu"/></button>
+                </div>
+                <img src="images/brasao.png" alt="brasao header" id="brasaoCentro"/>
+                <div id="botoesHeader">
+                    <span id="botaoExAluno"><a href="">Ex-aluno</a></span>
+                    <span id="botaoVisitante"><a href="">Visitante</a></span>
+                    <span id="botaoAlunos"><a href="">Alunos</a></span>
+                    <span id="botaoIngresso"><a href="ingresso.html"><button><img src="images\Botaoingresso.png" alt="botao ingresso"></button></a></span>
+                </div>
+                
 
-        
-        <nav>
-            <ul>
-                <li><a href="ingresso.html">Ingressar agora</a></li>
-                <li><a href="contato.html">Pedir Informações</a></li>
-                <li><a href="contato.html">Agendar uma visita</a></li>
-            </ul>            
-        </nav>
+
+
+            </div>
+            <div id="linksDeInfo">
+                <div>
+                    <a id="ingresso" class="letraBranca" href="ingresso.html">Ingressar agora</a>
+                </div>
+                <div>
+                    <a class="letraBranca" href="contato.html">Pedir Informações</a>
+                </div>
+                <div>
+                    <a class="letraBranca" href="contato.html">Agendar uma visita</a>
+                </div>
+                
+            </div>
+
+<!-- Inicio da Pagina Casas -->
+
 
         <section>
             <div>
