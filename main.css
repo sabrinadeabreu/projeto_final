@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *{
     font-family: 'Jacques Francois', serif;
     text-decoration: none;
@@ -150,7 +149,7 @@ button{
     margin: 0px 0px;
 }
 
-=======
+
 *{
     font-family: 'Jacques Francois', serif;
     text-decoration: none;
@@ -302,4 +301,186 @@ button{
     margin: 0px 0px;
 }
 
->>>>>>> aa2cc2374b0e101a5515c6ba5dfe6f7efa338273
+
+ /*-- Exclusivo Pagina Casas -- */
+
+
+ .container1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "TituloCasas" 
+    "BoxImagem"
+    "BoxTxt" 
+    "GRIF"
+    "LUF"
+    "CORV"
+    "SONS"
+    "BannerRodape"
+    ;
+    }
+
+.TituloCasas {
+    display: grid;
+
+    color: black;
+    border: red 2px solid;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 350%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+   
+}
+
+.BoxImagem{
+    display: grid;
+    justify-content: center;
+    color: black;
+    border: red 2px solid;
+
+}
+
+.BoxTxt{
+    display: grid;
+    justify-content: center;
+    color: black;
+    border: red 2px solid;
+    text-align: center;
+    font-size: 150%;
+    margin-bottom: 25px;
+
+}
+
+.titulos{
+
+    color: black;
+    border: red 2px solid;
+    text-align: left;
+    text-decoration: underline;
+    font-size: 150%;
+    
+}
+
+.GRIF {
+    display: grid;
+    color: black;
+    border: red 2px solid;
+
+    grid-template-columns: 25% auto ;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "ImgGrif" "TxtGrif";
+}
+
+.ImgGrif{
+    display: grid;
+    justify-content: center;
+    color: black;
+    border: red 2px solid;
+}
+
+.TxtGrif{
+    display: grid;
+    justify-content: left;
+    color: black;
+    border: red 2px solid;
+    font-size: 115%;
+    text-align: center;
+}
+
+.LUF {
+    display: grid;
+    color: black;
+    border: red 2px solid;
+
+    grid-template-columns: 25% auto ;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "ImgLuf" "TxtLuf";
+}
+
+.ImgLuf{
+    display: grid;
+    justify-content: center;
+    color: black;
+    border: red 2px solid;
+}
+
+.TxtLuf{
+    display: grid;
+    justify-content: left;
+    color: black;
+    border: red 2px solid;
+    font-size: 115%;
+    text-align: center;
+}
+
+.CORV {
+    display: grid;
+    color: black;
+    border: red 2px solid;
+
+    grid-template-columns: 25% auto ;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "ImgCorv" "TxtCorv";
+}
+
+.ImgCorv{
+    display: grid;
+    justify-content: center;
+    color: black;
+    border: red 2px solid;
+}
+
+.TxtCorv{
+    display: grid;
+    justify-content: left;
+    color: black;
+    border: red 2px solid;
+    font-size: 115%;
+    text-align: center;
+}
+.SONS {
+    display: grid;
+    color: black;
+    border: red 2px solid;
+
+    grid-template-columns: 25% auto ;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "ImgSons" "TxtSons";
+}
+
+.ImgSons{
+    display: grid;
+    justify-content: center;
+    color: black;
+    border: red 2px solid;
+}
+
+.TxtSons{
+    display: grid;
+    justify-content: left;
+    color: black;
+    border: red 2px solid;
+    font-size: 115%;
+    text-align: center;
+
+}
+
+.BannerRodape {
+
+    display: grid;
+    justify-content: center;
+    color: black;
+    border: red 2px solid;
+
+}
