@@ -7,158 +7,8 @@
 
 .letraBranca{
     color: white;
-    margin-left: 24px;
-}
-
-.brasaoetitulo{
-
-    background-image: url(images/background1.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 900px;
-    display: grid;
-    grid-template-areas:
-      "tituloDaPagina brasaoCentro botaoExAluno botaoVisitante botaoAlunos botaoIngresso";
-    
-    grid-template-rows: 100px; 
-    grid-template-columns: 45% 20% 10% 10% 10% 10% 10%; 
-    grid-gap: 16px;
-    margin: 0px 0px;
-}
-
-
-#tituloDaPagina{
-    color: white;
-}
-#botoesHeader{
-
-    border: 2px solid violet;
-    width: 400px;
-    display: flex;
-
-}
-
-#linksDeInfo{
    
-    width: 100%;
-    display: grid;
-    grid-template-rows: 80px ; 
-    grid-template-columns: 40% 33% 33%;
-    grid-gap: 32px;
-    align-items: center;
-    background-color: #28555C;
-    font-size: 24px;
-    color: white;   
-    border: 1px solid rebeccapurple; 
-}
-
-
-#brasaoCentro
-{
-    border: 1px solid red;
-}
-
-#botaoExAluno{
-    border: 1px solid red;
-}
-
-#botaoVisitante{
-    border: 1px solid red;
-}
-
-#botaoAlunos{
-    border: 1px solid red;
-    
-}
-
-#botaoIngresso{
-    border: 1px solid red;
-    
-}
-
-#tituloDaPagina{
-    border: 1px solid red;
-    
-}
-
-#botaoMenu{
-   
-    width: 148px;
-    height: 50px;
-    margin: 0px 0px;
-    
-}
-
-#numerosMagicos{
-    border: 1px solid red;
-    display: grid;
-    grid-template-areas:
-      "varinhaEsquerda tituloNumeros varinhaDireita"
-      "varinhaEsquerda taxas varinhadireita";
-    grid-template-rows: 500px 200px; 
-    grid-template-columns: 25% 50% 25%; 
-    grid-gap: 16px;
-    margin: 0px 0px;
-}
-#blocoNumerosMagicos{
-    border: 1px solid blue;
-
-}
-
-
-#tituloNumeros {
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    color: #28555C;
-    
-}
-.taxaTitulo{
-    font-size: 48px;
-    display: flex;
-    border: 1px solid black;
-    width: 120px;
-    align-items: center;
-    justify-content: center;
-}
-
-#taxas{
-    color: #28555C;
-    font-size: 20;
-    border: 1px solid orange
-}
-#varinhaDireita{
-    border: 1px solid red;
-}
-
-#varinhaEsquerda{
-    border: 1px solid red;
-}
-
-button{
-    padding: 0px;
-    margin: 0px;
-    width: 148px;
-    height: 50px;
-}
-#iconemenu{
-    width: 148px;
-    height: 50px;
-    margin: 0px 0px;
-}
-
-*{
-    font-family: 'Jacques Francois', serif;
-    text-decoration: none;
-    margin: 0px 0px;
-    
-}
-
-.letraBranca{
-    color: white;
-    margin-left: 24px;
+    /*--  margin-left: 24px; -- */
 }
 
 .brasaoetitulo{
@@ -485,3 +335,88 @@ button{
 }
 
  /*-- Fim  Pagina Casas -- */
+
+/*-- Inicio  Pagina Quadribol -- */
+.grade {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr, 8fr, 1fr;
+    border:solid red
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    border:solid green
+}
+
+.secao {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "texto imagem"
+        "botao botao";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    border:solid pink;
+    grid-column-gap: 50px;
+    grid-row-gap: 10;
+    justify-items: stretch;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.titulo-secao{
+    grid-area: titulo;
+    text-align: center;
+    border:solid black
+}
+
+.texto-secao{
+    grid-area: texto;
+    text-align: justify;
+    border:solid black;
+    justify-self: baseline;
+    font-size: 150%;
+}
+
+.imagem-secao{
+    grid-area: imagem;
+    border:solid black;
+    justify-self: flex-start;
+}
+
+.botao-secao {
+    grid-area: botao;
+    border:solid black;
+    justify-self: center;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.branca{
+    background-color: white;
+}
+
+.verde{
+    background-color: #28555C;
+}
+
+.letraVerde {
+    color:#28555C    
+}
