@@ -1,8 +1,7 @@
 *{
     font-family: 'Jacques Francois', serif;
     text-decoration: none;
-    margin: 0px 0px;
-    
+    margin: 0px 0px;    
 }
 
 .letraBranca{
@@ -91,52 +90,57 @@ a {
 }
 
 #numerosMagicos{
-    border: 1px solid red;
     display: grid;
     grid-template-areas:
-      "varinhaEsquerda tituloNumeros varinhaDireita"
-      "varinhaEsquerda taxas varinhadireita";
-    grid-template-rows: 500px 200px; 
+      "varinhaEsquerda blocoNumerosMagicos varinhaDireita";
+    grid-template-rows: 600px; 
     grid-template-columns: 25% 50% 25%; 
-    grid-gap: 16px;
-    margin: 0px 0px;
+    align-items: center;
+    grid-gap: 1%;
 }
+
+#varinhaEsquerda{
+    grid-area: varinhaEsquerda;
+}
+
 #blocoNumerosMagicos{
-    border: 1px solid blue;
-
+    grid-area: blocoNumerosMagicos;
+    display: grid;
+    grid-template-areas: 
+        "tituloNumeros"
+        "taxas";    
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    color: #28555C;
+    justify-items: center;
+    align-content: space-between;
 }
-
 
 #tituloNumeros {
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    color: #28555C;
-    
+    grid-area: tituloNumeros;  
+    font-size: 48px;  
 }
+
+#taxas{
+    grid-area: taxas;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#varinhaDireita{
+    grid-area: varinhaDireita;
+}
+
 .taxaTitulo{
     font-size: 48px;
-    display: flex;
-    border: 1px solid black;
     width: 120px;
     align-items: center;
     justify-content: center;
 }
 
-#taxas{
-    color: #28555C;
-    font-size: 20;
-    border: 1px solid orange
-}
-#varinhaDireita{
-    border: 1px solid red;
-}
 
-#varinhaEsquerda{
-    border: 1px solid red;
-}
+
 
 button {
     border:none;
