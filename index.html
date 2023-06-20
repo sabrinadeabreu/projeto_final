@@ -14,26 +14,34 @@
         <header>
             <div class="brasaoetitulo">
                 <div id="botaoMenu">
-                    <button id="iconeMenu"><img src="images\menu.png" alt="icone menu"/></button>
+                    <button id="iconeMenu" class="button-with-icon">
+                        <img src="images\bars.png" alt="icone menu"/>Menu
+                    </button>
                 </div>
                 <img src="images/brasao.png" alt="brasao header" id="brasaoCentro"/>
-                <div id="botoesHeader">
-                    <span id="botaoExAluno"><a href="">Ex-aluno</a></span>
-                    <span id="botaoVisitante"><a href="">Visitante</a></span>
-                    <span id="botaoAlunos"><a href="">Alunos</a></span>
-                    <span id="botaoIngresso"><a href="ingresso.html"><button><img src="images\Botaoingresso.png" alt="botao ingresso"></button></a></span>
+                <div id="nav-BotaoIngresso">
+                    <nav id="botoesHeader">
+                        <ul id="menu-superior-direito" class="listaFlexRow">
+                            <li id="menuExAluno"><a href="">Ex-aluno </a></li>
+                            <li id="menuVisitante"><a href="">Visitante </a></li>
+                            <li id="menuAluno"><a href="">Aluno </a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <a href="ingresso.html"><button id="botaoIngresso">Ingresso</button></a>
+                    </div>
                 </div>
-                
+                    
             </div>
-            <div id="linksDeInfo">
-                <div>
-                    <a id="ingresso" class="letraBranca" href="ingresso.html">Ingressar agora</a>
+            <div id="linksDeInfo" class="verde">
+                <div class="info-menu" id="info1">
+                    <a id="ingresso" href="ingresso.html">Ingressar agora</a>
                 </div>
-                <div>
-                    <a class="letraBranca" href="contato.html">Pedir Informações</a>
+                <div class="info-menu" id="info2">
+                    <a href="contato.html">Pedir Informações</a>
                 </div>
-                <div>
-                    <a class="letraBranca" href="contato.html">Agendar uma visita</a>
+                <div class="info-menu" id="info3">
+                    <a href="contato.html">Agendar uma visita</a>
                 </div>
                 
             </div>
