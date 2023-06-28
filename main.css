@@ -178,7 +178,7 @@ button {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-gap: 15px;
+    grid-gap: 5px;
     grid-template-areas: 
     "TituloCasas" 
     "BoxImagem"
@@ -193,7 +193,7 @@ button {
 
 .TituloCasas {
     display: grid;
-
+    grid-area: TituloCasas;
     color: black;
     border: red 2px solid;
     text-align: center;
@@ -206,6 +206,7 @@ button {
 
 .BoxImagem{
     display: grid;
+    grid-area: BoxImagem;
     justify-content: center;
     color: black;
     border: red 2px solid;
@@ -214,6 +215,7 @@ button {
 
 .BoxTxt{
     display: grid;
+    grid-area: BoxTxt;
     justify-content: center;
     color: black;
     border: red 2px solid;
@@ -235,6 +237,7 @@ button {
 
 .GRIF {
     display: grid;
+    grid-area: GRIF;
     color: black;
     border: red 2px solid;
 
@@ -247,6 +250,7 @@ button {
 
 .ImgGrif{
     display: grid;
+    grid-area: ImgGrif;
     justify-content: center;
     color: black;
     border: red 2px solid;
@@ -254,7 +258,8 @@ button {
 
 .TxtGrif{
     display: grid;
-    justify-content: left;
+    grid-area: TxtGrif;
+    justify-content: right;
     color: black;
     border: red 2px solid;
     font-size: 115%;
@@ -263,6 +268,7 @@ button {
 
 .LUF {
     display: grid;
+    grid-area: LUF;
     color: black;
     border: red 2px solid;
 
@@ -275,6 +281,7 @@ button {
 
 .ImgLuf{
     display: grid;
+    grid-area: ImgLuf;
     justify-content: center;
     color: black;
     border: red 2px solid;
@@ -282,6 +289,7 @@ button {
 
 .TxtLuf{
     display: grid;
+    grid-area: TxtLuf;
     justify-content: left;
     color: black;
     border: red 2px solid;
@@ -291,6 +299,7 @@ button {
 
 .CORV {
     display: grid;
+    grid-area: CORV;
     color: black;
     border: red 2px solid;
 
@@ -303,6 +312,7 @@ button {
 
 .ImgCorv{
     display: grid;
+    grid-area: ImgCorv;
     justify-content: center;
     color: black;
     border: red 2px solid;
@@ -310,6 +320,7 @@ button {
 
 .TxtCorv{
     display: grid;
+    grid-area: TxtCorv;
     justify-content: left;
     color: black;
     border: red 2px solid;
@@ -318,6 +329,7 @@ button {
 }
 .SONS {
     display: grid;
+    grid-area: SONS;
     color: black;
     border: red 2px solid;
 
@@ -330,6 +342,7 @@ button {
 
 .ImgSons{
     display: grid;
+    grid-area: ImgSons;
     justify-content: center;
     color: black;
     border: red 2px solid;
@@ -337,6 +350,7 @@ button {
 
 .TxtSons{
     display: grid;
+    grid-area: TxtSons;
     justify-content: left;
     color: black;
     border: red 2px solid;
@@ -348,6 +362,7 @@ button {
 .BannerRodape {
 
     display: grid;
+    grid-area: BannerRodape;
     justify-content: center;
     color: black;
     border: red 2px solid;
