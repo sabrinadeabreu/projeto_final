@@ -188,7 +188,6 @@ button {
     "CORV"
     "SONS"
     "BannerRodape"
-    ;
     }
 
 .TituloCasas {
@@ -229,7 +228,9 @@ button {
 
     color: black;
     border: red 2px solid;
-    text-align: left;
+    text-align: center;
+    margin: 25px;
+    padding: 25px;
     text-decoration: underline;
     font-size: 150%;
     
@@ -249,17 +250,14 @@ button {
 }
 
 .ImgGrif{
-    display: grid;
-    grid-area: ImgGrif;
-    justify-content: center;
+    display: flex;
     color: black;
     border: red 2px solid;
 }
 
 .TxtGrif{
-    display: grid;
-    grid-area: TxtGrif;
-    justify-content: right;
+    display: flex;
+    align-items: center;
     color: black;
     border: red 2px solid;
     font-size: 115%;
@@ -280,17 +278,14 @@ button {
 }
 
 .ImgLuf{
-    display: grid;
-    grid-area: ImgLuf;
-    justify-content: center;
+    display: flex;
     color: black;
     border: red 2px solid;
 }
 
 .TxtLuf{
-    display: grid;
-    grid-area: TxtLuf;
-    justify-content: left;
+    display: flex;
+    align-items: center;
     color: black;
     border: red 2px solid;
     font-size: 115%;
@@ -311,17 +306,14 @@ button {
 }
 
 .ImgCorv{
-    display: grid;
-    grid-area: ImgCorv;
-    justify-content: center;
+    display: flex;
     color: black;
     border: red 2px solid;
 }
 
 .TxtCorv{
-    display: grid;
-    grid-area: TxtCorv;
-    justify-content: left;
+    display: flex;
+    align-items: center;
     color: black;
     border: red 2px solid;
     font-size: 115%;
@@ -341,17 +333,14 @@ button {
 }
 
 .ImgSons{
-    display: grid;
-    grid-area: ImgSons;
-    justify-content: center;
+    display: flex;
     color: black;
     border: red 2px solid;
 }
 
 .TxtSons{
-    display: grid;
-    grid-area: TxtSons;
-    justify-content: left;
+    display: flex;
+    align-items: center;
     color: black;
     border: red 2px solid;
     font-size: 115%;
