@@ -30,52 +30,34 @@
 
     </head>
 
-    <body class="container-fluid" style="margin: 0px 0px;">
-        
-        
-
-        <div class="container" > <!-- header -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(255, 255, 255); background-color: #892424; border-color: #892424;" >
-                          Menu
-                        </button>
-                            <ul class="dropdown-menu">
-                                <li><button class="dropdown-item" type="button">Action</button></li>
-                                <li><button class="dropdown-item" type="button">Another action</button></li>
-                                <li><button class="dropdown-item" type="button">Something else here</button></li>
-                            </ul>
-                    </div>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#" style="margin-left: 650px; color: rgb(110, 41, 41);">Ex-Alunos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: rgb(168, 72, 72);">Visitante</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: rgb(175, 69, 69);">Alunos</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                
-                  </div>
+    <body>
+        <header>
+            <div class="brasaoetitulo">
+                <div id="botaoMenu">
+                    <button id="iconeMenu"><img src="images\menu.png" alt="icone menu"/></button>
                 </div>
-              </nav>
-
-
-        </div>
-        <div class="container-fluid; sticky-top;" style="justify-content: stretch;">
-            <img src="images\background1.gif" class="img-fluid" alt="Imagem responsiva" style="width: 1920px;">
-
-        </div>
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary, container, col-12;" style="background-color: #28555C; justify-content: space-between; align-items: center; margin-bottom: 48px;">
-            <div class="container-fluid" style="background-color: #28555C;">
+                <img src="images/brasao.png" alt="brasao header" id="brasaoCentro"/>
+                <div id="botoesHeader">
+                    <span id="botaoExAluno"><a href="">Ex-aluno</a></span>
+                    <span id="botaoVisitante"><a href="">Visitante</a></span>
+                    <span id="botaoAlunos"><a href="">Alunos</a></span>
+                    <span id="botaoIngresso"><a href="ingresso.html"><button><img src="images\Botaoingresso.png" alt="botao ingresso"></button></a></span>
+                </div>
+                
+            </div>
+            <div id="linksDeInfo">
+                <div>
+                    <a id="ingresso" class="letraBranca" href="ingresso.html">Ingressar agora</a>
+                </div>
+                <div>
+                    <a class="letraBranca" href="contato.html">Pedir Informações</a>
+                </div>
+                <div>
+                    <a class="letraBranca" href="contato.html">Agendar uma visita</a>
+                </div>
+                
+            </div>
+  
             
               <div class="collapse navbar-collapse" id="navbarNav" style="justify-content:space-evenly">
                 <ul class="navbar-nav" >
@@ -89,41 +71,35 @@
                     <a class="nav-link" href="#" style="color: white; font-size: 24px; margin-right: 50px; margin-left: 50px;">Agendar visita</a>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </nav>
-          
+            </span> -->
+            
+           
+        </header>
 
-        <div class="container-fluid" style="margin-bottom: 72px;">
-            <div class="row">
-              <div class="col-3">
+        <section >
+            <div id="numerosMagicos" class="numerosmagicos">
                 <div id="varinhaEsquerda">
                     <img src="images/varinhaesquerda.png" alt="varinha para esquerda">
                 </div>
-              </div>
-              <div class="col-6" >
-                <div id="tituloNumeros">
-                    <div class="container text-center" style="font-size: 48px; color: #28555C; margin-bottom: 72px;">Nossos números mágicos</div> 
-                    <div class="container text-center">
-                        <div class="row">
-                          <div class="col">
-                            <div id="admissao" style="font-size: 20px; color: #28555C;"><div class="taxaTitulo" style="font-size: 48px; color: #28555C;">98%</div>de taxa de admissão nos exames</div>
-                          </div>
-                          <div class="col">
-                            <div id="trabalhando" style="font-size: 20px; color: #28555C;"><div class="taxaTitulo" style="font-size: 48px; color: #28555C;">60%</div>de ex-alunos trabalhando no Gringots</div>
-                          </div>
-                          <div class="col">
-                            <div id="satisfacao" style="font-size: 20px; color: #28555C;"><div class="taxaTitulo" style="font-size: 48px; color: #28555C;">100%</div>de índice de aprendizado e satisfação</div>
-                          </div>
-                        </div>
-                      </div>  
-                </div>   
-              </div>
-              <div class="col">
+                <div id="blocoNumerosMagicos">
+                    <div id="tituloNumeros">
+                        <span>Nossos números mágicos</span>    
+                    </div>              
+                <div id="taxas">
+                    <div id="admissao"><div class="taxaTitulo">98%</div>de taxa de admissão nos exames</div>
+                    <div id="trabalhando"><div class="taxaTitulo">60%</div>de ex-alunos trabalhando no Gringots</div>
+                    <div id="satisfacao"><div class="taxaTitulo">100%</div>de índice de aprendizado e satisfação</div>
+                </div>
+                        
+                </div>
+
+                
+
                 <div id="varinhaDireita">
                     <img src="images/varinhadireita.png" alt="varinha para direita">
                 </div>
-              </div>
+                
+              
             </div>
           </div>
 

@@ -3,153 +3,202 @@
     <head>
         <title>Quadribol</title>
         <link rel="shortcut icon" href="icon_hogwarts.png">
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     </head>
 
     <body>
-        <header>        
-            <span>
-                <img src="images/brasao.png" alt="brasao header"/>    
-                <span><button><img src="images/bars.png" alt="icone menu"/> Menu </button></span>
-                <ul>
-                    <li>Home</li>
-                    <li>Sobre</li>
-                    <li>Disciplinas</li>
-                    <li>Professores</li>
-                    <li>Casas</li>
-                    <li>Quadribol</li>
-                    <li>Eventos</li>
-                    <li>Notícias</li>
-                </ul>
-            </span>
+
+        <div class="grade">            
             
-            <span><a href="">Ex-aluno</a></span>
-            <span><a href="">Visitante</a></span>
-            <span><a href="">Alunos</a></span>
-            <span><a href="ingresso.html"><button>Ingresso</button></a></span>
-
-            <h1>Quadribol</h1>
-        </header>        
-
-        <section>
-            <div>
-                <div>
-                    <h2>O que é</h2>
-                    <p>O Quadribol é um esporte cheio de adrenalina, estratégia e trabalho em equipe. Os jogadores devem demonstrar habilidades de voo, agilidade, precisão nos lançamentos e um excelente entendimento das táticas do jogo. Além disso, o espírito esportivo, a lealdade e a cooperação são valores fundamentais para o sucesso de uma equipe de Quadribol.</p>
-                </div>
-                <div>
-                    <img src="images/aros.png" alt="gol do quadribol">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div>
-                <div>
-                    <h2>Venha participar da seletiva de Quadribol</h2>
-                </div>
-                <div>
-                    <p>É com imensa alegria que convidamos vocês a se inscreverem na tão esperada seletiva de Quadribol! Se você é apaixonado por voar, possui habilidades mágicas excepcionais e deseja vivenciar a intensidade e a emoção desse esporte fascinante, essa é a sua chance de brilhar no campo de jogo.</p>                        Data: [Inserir a data da seletiva]
-                    <div>
-                        <p>Local: [Inserir o local da seletiva]</p>
-                        <p>Horário: [Inserir o horário da seletiva]</p>                        
-                        <p>Não importa se você é um iniciante ansioso para mostrar suas habilidades recém-descobertas ou um jogador experiente em busca de um novo desafio, todos são bem-vindos para se juntar a nós nessa jornada repleta de adrenalina e camaradagem.</p>
+            <header>
+                <div class="brasaoetitulo">
+                    <div id="botaoMenu">
+                        <button id="iconeMenu" class="button-with-icon">
+                            <img src="images\bars.png" alt="icone menu"/>Menu
+                        </button>
                     </div>
-                    <div>
+                    <img src="images/brasao.png" alt="brasao header" id="brasaoCentro"/>
+                    <div id="nav-BotaoIngresso">
+                        <nav id="botoesHeader">
+                            <ul id="menu-superior-direito" class="listaFlexRow">
+                                <li id="menuExAluno"><a href="">Ex-aluno </a></li>
+                                <li id="menuVisitante"><a href="">Visitante </a></li>
+                                <li id="menuAluno"><a href="">Aluno </a></li>
+                            </ul>
+                        </nav>
+                        <div>
+                            <a href="ingresso.html"><button id="botaoIngresso">Ingresso</button></a>
+                        </div>
+                    </div>
+                        
+                </div>
+                <div id="linksDeInfo" class="verde">
+                    <div class="info-menu" id="info1">
+                        <a id="ingresso" href="ingresso.html">Ingressar agora</a>
+                    </div>
+                    <div class="info-menu" id="info2">
+                        <a href="contato.html">Pedir Informações</a>
+                    </div>
+                    <div class="info-menu" id="info3">
+                        <a href="contato.html">Agendar uma visita</a>
+                    </div>
+                    
+                </div>
+      
+                
+                <!-- <span >
+                    
+                    <ul>
+                        <li>Home</li>
+                        <li>Sobre</li>
+                        <li>Disciplinas</li>
+                        <li>Professores</li>
+                        <li>Casas</li>
+                        <li>Quadribol</li>
+                        <li>Eventos</li>
+                        <li>Notícias</li>
+                    </ul>
+                </span> -->
+                
+                <h1>Quadribol</h1>
+            </header>            
+        
+            <main>                
+                <section class="secao branca letraVerde">
+                    <div class="titulo-secao">
+                        <h2>O que é</h2>
+                    </div>   
+                    <div class="texto-secao">
+                        <p>O Quadribol é um esporte cheio de adrenalina, estratégia e trabalho em equipe. Os jogadores devem demonstrar habilidades de voo, agilidade, precisão nos lançamentos e um excelente entendimento das táticas do jogo. Além disso, o espírito esportivo, a lealdade e a cooperação são valores fundamentais para o sucesso de uma equipe de Quadribol.</p>
+                    </div>
+                    <div class="imagem-secao">
+                        <img src="images/aros.png" alt="gol do quadribol">
+                    </div>
+                </section>
+                
+                <section class="secao verde letraBranca">
+                    <div class="titulo-secao">
+                        <h2>Venha participar da seletiva de Quadribol</h2>
+                    </div>
+                    <div class="texto-secao">
+                        <div class="subtexto-secao">
+                            <p>É com imensa alegria que convidamos vocês a se inscreverem na tão esperada seletiva de Quadribol! Se você é apaixonado por voar, possui habilidades mágicas excepcionais e deseja vivenciar a intensidade e a emoção desse esporte fascinante, essa é a sua chance de brilhar no campo de jogo.</p>
+                            <br>
+                            <p>Data: [Inserir a data da seletiva]</p>
+                            <p>Local: [Inserir o local da seletiva]</p>
+                            <p>Horário: [Inserir o horário da seletiva]</p> 
+                            <br>                       
+                            <p>Não importa se você é um iniciante ansioso para mostrar suas habilidades recém-descobertas ou um jogador experiente em busca de um novo desafio, todos são bem-vindos para se juntar a nós nessa jornada repleta de adrenalina e camaradagem.</p>
+                        </div>
+                    </div>
+                    <div class="botao-secao">
                         <a href=""><button>Inscreva-se aqui</button></a>
                     </div>
-                </div>
-                <div>
-                    <img src="images/pomo_ouro.png" alt="pomo de outro">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div>
-                <div>                
-                    <h2>Conheça o time Hogwarts</h2>
-                </div>
-                <div>
-                    <article>
-                        <div>
-                            <div><img src="images/simas_capitao.png" alt="simas capitao do time"></div>
-                            <div><h3>Nosso capitão: Simas</h3></div>
-                            <div><p>Nosso sucesso não se baseia apenas em nossas habilidades individuais, mas na nossa capacidade de voar como um só. O respeito, a confiança e o apoio mútuo são as asas que nos elevam e nos fazem voar mais alto. </p></div>
-                        </div>                        
-                    </article>
+                    <div class="imagem-secao">
+                        <img src="images/pomo_ouro.png" alt="pomo de outro">
+                    </div>            
+                </section>
+                
+                <section class="secao-com-slider branca letraVerde">
+                    <div class="titulo-secao ">                
+                        <h2>Conheça o time Hogwarts</h2>
+                    </div>
                     
-                    <article>
-                        <div>
-                            <div><img src="images/ron_weasley.jpeg" alt="rony weasley quadribol"></div>
-                            <div><h3>Rony Weasley</h3></div>
-                            <div><p>Lembro-me das primeiras vezes em que voei em uma vassoura, mal conseguindo me equilibrar direito. Foi desafiador, mas também empolgante. À medida que ganhava confiança e habilidade, mergulhava cada vez mais fundo nesse esporte mágico. </p></div>
-
-                        </div>                        
-                    </article>    
-
-                    <article>
-                        <div>
-                            <div><img src="images/draco_malfoy.jpeg" alt="draco malfoy quadribol"></div>
-                            <div><h3>Draco Malfoy</h3></div>
-                            <div>
+                    <div class="artigo-secao">
+                        <div class="imagem-secao">
+                            <img src="images/simas_capitao.png" alt="simas capitao do time">
+                        </div>
+                        <div class="texto-secao">
+                            <div class="subtitulo-secao">
+                                <h3>Nosso capitão: Simas</h3>
+                            </div>
+                            <div class="subtexto-secao">
+                                <p>Nosso sucesso não se baseia apenas em nossas habilidades individuais, mas na nossa capacidade de voar como um só. O respeito, a confiança e o apoio mútuo são as asas que nos elevam e nos fazem voar mais alto.</p>
+                            </div>               
+                        </div>
+                    </div>
+                    
+                    <div class="artigo-secao">
+                        <div class="imagem-secao">
+                            <img src="images/ron_weasley.jpeg" alt="rony weasley quadribol">
+                        </div>
+                        <div class="texto-secao">
+                            <div class="subtitulo-secao">
+                                <h3>Rony Weasley</h3>
+                            </div>
+                            <div class="subtexto-secao">
+                                <p>Lembro-me das primeiras vezes em que voei em uma vassoura, mal conseguindo me equilibrar direito. Foi desafiador, mas também empolgante. À medida que ganhava confiança e habilidade, mergulhava cada vez mais fundo nesse esporte mágico.</p>
+                            </div>               
+                        </div>
+                    </div>
+                    
+                    <div class="artigo-secao">
+                        <div class="imagem-secao">
+                            <img src="images/draco_malfoy.jpeg" alt="draco malfoy quadribol">
+                        </div>
+                        <div class="texto-secao">
+                            <div class="subtitulo-secao">
+                                <h3>Draco Malfoy</h3>
+                            </div>
+                            <div class="subtexto-secao">
                                 <p>É verdade que sou um nato para esse esporte. Meu talento natural e habilidade inigualável me colocam em destaque, tanto no ar quanto na terra. O quadribol é um reflexo perfeito da minha natureza competitiva e ambiciosa, e não consigo resistir ao sentimento de superioridade que me envolve quando estou no campo.</p>
                                 <p>Ver os outros jogadores se contorcendo sob o peso do medo e da derrota enquanto eu me destaco com minha destreza e habilidade é uma visão que me enche de prazer.</p>
-                            </div>
-                        </div>                        
-                    </article>    
-                    
-                </div>                                                      
-            </div>
-        </section>
+                            </div>               
+                        </div>
+                    </div> 
+                </section>
 
-        <section>
-            <div>
+                <section class="secao verde letraBranca">
+                    <div class="titulo-secao">
+                        <h2>Nossos resultados</h2>
+                    </div>
+                    <div class="texto-secao">
+                        <div class="subtexto-secao">
+                            <ul>
+                                <li>1º lugar na Copa Internacional de Quadribol</li>
+                                <li>1º lugar na Liga Mágica de Quadribol</li>
+                                <li>1º lugar na Torneio das Casas de Quadribol</li>
+                                <li>1º lugar na Campeonato Mundial de Quadribol</li>
+                                <li>1º lugar na Copa das Nações Mágicas</li>
+                                <li>1º lugar na Desafio dos Dragões Voadores</li>
+                                <li>1º lugar na Torneio das Estrelas do Quadribol</li>
+                                <li>1º lugar na Taça dos Campeões de Quadribol</li>
+                                <li>1º lugar na Copa dos Encantamentos de Quadribol</li>
+                                <li>1º lugar na Torneio dos Quatro Elementos do Quadribol</li>
+                                <li>1º lugar na Copa do Vassourão Dourado</li>
+                                <li>1º lugar na Desafio dos Voadores Velozes</li>
+                                <li>1º lugar na Campeonato das Feras Fantásticas do Quadribol</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="imagem-secao">
+                        <img src="images/tofeu_quadribol.png" alt="comemoracao trofeu de quadribol">
+                    </div>
+                </section>
+                
+            </main>
+            
+            <footer>
                 <div>
-                    <h2>Nossos resultados</h2>
+                    <img src="images/brasao.png" alt="brasao da escola">
+                </div>
+                <div>
+                    <p>Hogwarts Magia e Bruxaria S/A</p><br>
+                    <p>Todos os direitos reservados</p><br>
+                    <p>Mapa do site</p>
                 </div>
                 <div>
                     <ul>
-                        <li>1º lugar na Copa Internacional de Quadribol</li>
-                        <li>1º lugar na Liga Mágica de Quadribol</li>
-                        <li>1º lugar na Torneio das Casas de Quadribol</li>
-                        <li>1º lugar na Campeonato Mundial de Quadribol</li>
-                        <li>1º lugar na Copa das Nações Mágicas</li>
-                        <li>1º lugar na Desafio dos Dragões Voadores</li>
-                        <li>1º lugar na Torneio das Estrelas do Quadribol</li>
-                        <li>1º lugar na Taça dos Campeões de Quadribol</li>
-                        <li>1º lugar na Copa dos Encantamentos de Quadribol</li>
-                        <li>1º lugar na Torneio dos Quatro Elementos do Quadribol</li>
-                        <li>1º lugar na Copa do Vassourão Dourado</li>
-                        <li>1º lugar na Desafio dos Voadores Velozes</li>
-                        <li>1º lugar na Campeonato das Feras Fantásticas do Quadribol</li>
+                        <li><a href="">Ex-alunos</a></li>
+                        <li><a href="">Alunos</a></li>
+                        <li><a href="">O castelo</a></li>
+                        <li><a href="contato.html">Pedir Informações</a></li>
+                        <li><a href="contato.html">Agendar uma visita</a></li>
+                        <li><a href="ingresso.html">Junte-se a nós</a></li>
                     </ul>
                 </div>
-                <div>
-                    <img src="images/tofeu_quadribol.png" alt="comemoracao trofeu de quadribol">
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div>
-                <img src="images/brasao.png" alt="brasao da escola">
-            </div>
-            <div>
-                <p>Hogwarts Magia e Bruxaria S/A</p><br>
-                <p>Todos os direitos reservados</p><br>
-                <p>Mapa do site</p>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="">Ex-alunos</a></li>
-                    <li><a href="">Alunos</a></li>
-                    <li><a href="">O castelo</a></li>
-                    <li><a href="contato.html">Pedir Informações</a></li>
-                    <li><a href="contato.html">Agendar uma visita</a></li>
-                    <li><a href="ingresso.html">Junte-se a nós</a></li>
-                </ul>
-            </div>
-        </footer>
-
+            </footer>
+        
+        </div>
     </body>
 </html>

@@ -1,63 +1,173 @@
 *{
     font-family: 'Jacques Francois', serif;
     text-decoration: none;
-    margin: 0px 0px;
-    
+    margin: 0px 0px;    
 }
 
 .letraBranca{
     color: white;
-    margin-left: 24px;
+}
+
+a {
+    color:white;
 }
 
 .brasaoetitulo{
-
-    background-image: url(images/background1.gif);
+    background-image: url(images/capa.gif.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
+    height: 700px;
     display: grid;
     grid-template-areas:
-      "tituloDaPagina brasaoCentro botaoExAluno botaoVisitante botaoAlunos botaoIngresso";
-    
-    grid-template-rows: 100px; 
-    grid-template-columns: 45% 20% 10% 10% 10% 10% 10%; 
-    grid-gap: 16px;
-    margin: 0px 0px;
+      "botaoMenu brasao nav-botoes";    
+    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-rows: 100px;
+    justify-content: center;
 }
 
-
-#tituloDaPagina{
-    color: white;
+#botaoMenu{
+    grid-area: botaoMenu;
+    justify-self: center;    
 }
-#botoesHeader{
 
-    border: 2px solid violet;
-    width: 400px;
+#brasaoCentro{
+    grid-area: brasao;
+    justify-self: center;
+}
+
+#nav-BotaoIngresso {
+    border: solid;
+    grid-area: nav-botoes;
     display: flex;
-
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-#linksDeInfo{
-   
+#botoesHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.listaFlexRow {
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    list-style-position: unset;
+    column-gap: 20px;
+}
+
+#linksDeInfo{   
     width: 100%;
     display: grid;
+    grid-template-areas: "info1 info2 info3";
     grid-template-rows: 80px ; 
-    grid-template-columns: 40% 33% 33%;
-    grid-gap: 32px;
+    grid-template-columns: 34% 33% 33%;
+    justify-content: space-around;
     align-items: center;
     background-color: #28555C;
     font-size: 24px;
-    color: white;   
-    border: 1px solid rebeccapurple; 
+}
+
+#info1 {
+    grid-area: info1;
+    justify-self: center;
+}
+
+#info2 {
+    grid-area: info2;
+    justify-self: center;
+}
+
+#info3 {
+    grid-area: info3;
+    justify-self: center;
+}
+
+<<<<<<< HEAD
+=======
+#numerosMagicos{
+    display: grid;
+    grid-template-areas:
+      "varinhaEsquerda blocoNumerosMagicos varinhaDireita";
+    grid-template-rows: 600px; 
+    grid-template-columns: 25% 50% 25%; 
+    align-items: center;
+    grid-gap: 1%;
+}
+
+#varinhaEsquerda{
+    grid-area: varinhaEsquerda;
+}
+
+#blocoNumerosMagicos{
+    grid-area: blocoNumerosMagicos;
+    display: grid;
+    grid-template-areas: 
+        "tituloNumeros"
+        "taxas";    
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    color: #28555C;
+    justify-items: center;
+    align-content: space-between;
+}
+
+#tituloNumeros {
+    grid-area: tituloNumeros;  
+    font-size: 48px;  
+}
+
+#taxas{
+    grid-area: taxas;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#varinhaDireita{
+    grid-area: varinhaDireita;
+}
+
+.taxaTitulo{
+    font-size: 48px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+>>>>>>> 4f975c99f60e6cd29f7c03b1ffaff3088ce04e06
+
+
+
+button {
+    border:none;
+    background-color:#892424;
+    border-radius: 8px;
+    font-size: 20px;
+    color:white;
+    padding: 0px;
+    margin: 0px;
+    width: 148px;
+    height: 50px;
+}
+
+.button-with-icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;    
 }
 
 
-#brasaoCentro
-{
-    border: 1px solid red;
-}
 
+<<<<<<< HEAD
 #botaoExAluno{
     border: 1px solid red;
 }
@@ -97,115 +207,287 @@ button{
     width: 148px;
     height: 50px;
 }
+=======
+>>>>>>> 4f975c99f60e6cd29f7c03b1ffaff3088ce04e06
 #iconemenu{
     width: 148px;
     height: 50px;
     margin: 0px 0px;
 }
 
-*{
-    font-family: 'Jacques Francois', serif;
-    text-decoration: none;
-    margin: 0px 0px;
+
+ /*-- Exclusivo Pagina Casas -- */
+
+
+ .container1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "TituloCasas" 
+    "BoxImagem"
+    "BoxTxt" 
+    "GRIF"
+    "LUF"
+    "CORV"
+    "SONS"
+    "BannerRodape"
+    }
+
+.TituloCasas {
+    display: grid;
+    grid-area: TituloCasas;
+    color: black;
+    border: red 2px solid;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 350%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+   
+}
+
+.BoxImagem{
+    display: grid;
+    grid-area: BoxImagem;
+    justify-content: center;
+    color: black;
+    border: red 2px solid;
+
+}
+
+.BoxTxt{
+    display: grid;
+    grid-area: BoxTxt;
+    justify-content: center;
+    color: black;
+    border: red 2px solid;
+    text-align: center;
+    font-size: 150%;
+    margin-bottom: 25px;
+
+}
+
+.titulos{
+
+    color: black;
+    border: red 2px solid;
+    text-align: center;
+    margin: 25px;
+    padding: 25px;
+    text-decoration: underline;
+    font-size: 150%;
     
 }
 
-.letraBranca{
-    color: white;
-    margin-left: 24px;
+.GRIF {
+    display: grid;
+    grid-area: GRIF;
+    color: black;
+    border: red 2px solid;
+
+    grid-template-columns: 25% auto ;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "ImgGrif" "TxtGrif";
 }
 
-.brasaoetitulo{
+.ImgGrif{
+    display: flex;
+    color: black;
+    border: red 2px solid;
+}
 
-    background-image: url(images/background1.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 900px;
+.TxtGrif{
+    display: flex;
+    align-items: center;
+    color: black;
+    border: red 2px solid;
+    font-size: 115%;
+    text-align: center;
+}
+
+.LUF {
+    display: grid;
+    grid-area: LUF;
+    color: black;
+    border: red 2px solid;
+
+    grid-template-columns: 25% auto ;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "ImgLuf" "TxtLuf";
+}
+
+.ImgLuf{
+    display: flex;
+    color: black;
+    border: red 2px solid;
+}
+
+.TxtLuf{
+    display: flex;
+    align-items: center;
+    color: black;
+    border: red 2px solid;
+    font-size: 115%;
+    text-align: center;
+}
+
+.CORV {
+    display: grid;
+    grid-area: CORV;
+    color: black;
+    border: red 2px solid;
+
+    grid-template-columns: 25% auto ;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "ImgCorv" "TxtCorv";
+}
+
+.ImgCorv{
+    display: flex;
+    color: black;
+    border: red 2px solid;
+}
+
+.TxtCorv{
+    display: flex;
+    align-items: center;
+    color: black;
+    border: red 2px solid;
+    font-size: 115%;
+    text-align: center;
+}
+.SONS {
+    display: grid;
+    grid-area: SONS;
+    color: black;
+    border: red 2px solid;
+
+    grid-template-columns: 25% auto ;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "ImgSons" "TxtSons";
+}
+
+.ImgSons{
+    display: flex;
+    color: black;
+    border: red 2px solid;
+}
+
+.TxtSons{
+    display: flex;
+    align-items: center;
+    color: black;
+    border: red 2px solid;
+    font-size: 115%;
+    text-align: center;
+
+}
+
+.BannerRodape {
+
+    display: grid;
+    grid-area: BannerRodape;
+    justify-content: center;
+    color: black;
+    border: red 2px solid;
+
+}
+
+ /*-- Fim  Pagina Casas -- */
+
+/*-- Inicio  Pagina Quadribol -- */
+.grade {
     display: grid;
     grid-template-areas:
-      "tituloDaPagina brasaoCentro botaoExAluno botaoVisitante botaoAlunos botaoIngresso";
-    
-    grid-template-rows: 100px; 
-    grid-template-columns: 45% 20% 10% 10% 10% 10% 10%; 
-    grid-gap: 16px;
-    margin: 0px 0px;
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr, 8fr, 1fr;
+    border:solid red
 }
 
-
-#tituloDaPagina{
-    color: white;
+header {
+    grid-area: header;
 }
-#botoesHeader{
 
-    border: 2px solid violet;
-    width: 400px;
+main {
+    grid-area: main;
     display: flex;
-
+    flex-direction: column;
+    border:solid green
 }
 
-#linksDeInfo{
-   
-    width: 100%;
+.secao {
     display: grid;
-    grid-template-rows: 80px ; 
-    grid-template-columns: 40% 33% 33%;
-    grid-gap: 32px;
+    grid-template-areas:
+        "titulo titulo"
+        "texto imagem"
+        "botao botao";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    border:solid pink;
+    grid-column-gap: 50px;
+    grid-row-gap: 10;
+    justify-items: stretch;
     align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.titulo-secao{
+    grid-area: titulo;
+    text-align: center;
+    border:solid black
+}
+
+.texto-secao{
+    grid-area: texto;
+    text-align: justify;
+    border:solid black;
+    justify-self: baseline;
+    font-size: 150%;
+}
+
+.imagem-secao{
+    grid-area: imagem;
+    border:solid black;
+    justify-self: flex-start;
+}
+
+.botao-secao {
+    grid-area: botao;
+    border:solid black;
+    justify-self: center;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.branca{
+    background-color: white;
+    color:#28555C
+}
+
+.verde{
     background-color: #28555C;
-    font-size: 24px;
-    color: white;   
-    border: 1px solid rebeccapurple; 
+    color:white;
 }
 
-
-#brasaoCentro
-{
-    border: 1px solid red;
+.letraVerde {
+    color:#28555C    
 }
-
-#botaoExAluno{
-    border: 1px solid red;
-}
-
-#botaoVisitante{
-    border: 1px solid red;
-}
-
-#botaoAlunos{
-    border: 1px solid red;
-    
-}
-
-#botaoIngresso{
-    border: 1px solid red;
-    
-}
-
-#tituloDaPagina{
-    border: 1px solid red;
-    
-}
-
-#botaoMenu{
-   
-    width: 148px;
-    height: 50px;
-    margin: 0px 0px;
-    
-}
-
-
-
-button{
-    padding: 0px;
-    margin: 0px;
-    width: 148px;
-    height: 50px;
-}
-#iconemenu{
-    width: 148px;
-    height: 50px;
-    margin: 0px 0px;
-}
-
-
