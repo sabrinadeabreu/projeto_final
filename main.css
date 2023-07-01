@@ -89,53 +89,7 @@
     
 }
 
-#numerosMagicos{
-    border: 1px solid red;
-    display: grid;
-    grid-template-areas:
-      "varinhaEsquerda tituloNumeros varinhaDireita"
-      "varinhaEsquerda taxas varinhadireita";
-    grid-template-rows: 500px 200px; 
-    grid-template-columns: 25% 50% 25%; 
-    grid-gap: 16px;
-    margin: 0px 0px;
-}
-#blocoNumerosMagicos{
-    border: 1px solid blue;
 
-}
-
-
-#tituloNumeros {
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    color: #28555C;
-    
-}
-.taxaTitulo{
-    font-size: 48px;
-    display: flex;
-    border: 1px solid black;
-    width: 120px;
-    align-items: center;
-    justify-content: center;
-}
-
-#taxas{
-    color: #28555C;
-    font-size: 20;
-    border: 1px solid orange
-}
-#varinhaDireita{
-    border: 1px solid red;
-}
-
-#varinhaEsquerda{
-    border: 1px solid red;
-}
 
 button{
     padding: 0px;
@@ -240,53 +194,7 @@ button{
     
 }
 
-#numerosMagicos{
-    border: 1px solid red;
-    display: grid;
-    grid-template-areas:
-      "varinhaEsquerda tituloNumeros varinhaDireita"
-      "varinhaEsquerda taxas varinhadireita";
-    grid-template-rows: 500px 200px; 
-    grid-template-columns: 25% 50% 25%; 
-    grid-gap: 16px;
-    margin: 0px 0px;
-}
-#blocoNumerosMagicos{
-    border: 1px solid blue;
 
-}
-
-
-#tituloNumeros {
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    color: #28555C;
-    
-}
-.taxaTitulo{
-    font-size: 48px;
-    display: flex;
-    border: 1px solid black;
-    width: 120px;
-    align-items: center;
-    justify-content: center;
-}
-
-#taxas{
-    color: #28555C;
-    font-size: 20;
-    border: 1px solid orange
-}
-#varinhaDireita{
-    border: 1px solid red;
-}
-
-#varinhaEsquerda{
-    border: 1px solid red;
-}
 
 button{
     padding: 0px;
