@@ -89,59 +89,6 @@ a {
     justify-self: center;
 }
 
-<<<<<<< HEAD
-=======
-#numerosMagicos{
-    display: grid;
-    grid-template-areas:
-      "varinhaEsquerda blocoNumerosMagicos varinhaDireita";
-    grid-template-rows: 600px; 
-    grid-template-columns: 25% 50% 25%; 
-    align-items: center;
-    grid-gap: 1%;
-}
-
-#varinhaEsquerda{
-    grid-area: varinhaEsquerda;
-}
-
-#blocoNumerosMagicos{
-    grid-area: blocoNumerosMagicos;
-    display: grid;
-    grid-template-areas: 
-        "tituloNumeros"
-        "taxas";    
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr;
-    color: #28555C;
-    justify-items: center;
-    align-content: space-between;
-}
-
-#tituloNumeros {
-    grid-area: tituloNumeros;  
-    font-size: 48px;  
-}
-
-#taxas{
-    grid-area: taxas;
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-}
-
-#varinhaDireita{
-    grid-area: varinhaDireita;
-}
-
-.taxaTitulo{
-    font-size: 48px;
-    width: 120px;
-    align-items: center;
-    justify-content: center;
-}
-
->>>>>>> 4f975c99f60e6cd29f7c03b1ffaff3088ce04e06
 
 
 
@@ -167,7 +114,6 @@ button {
 
 
 
-<<<<<<< HEAD
 #botaoExAluno{
     border: 1px solid red;
 }
@@ -207,8 +153,6 @@ button{
     width: 148px;
     height: 50px;
 }
-=======
->>>>>>> 4f975c99f60e6cd29f7c03b1ffaff3088ce04e06
 #iconemenu{
     width: 148px;
     height: 50px;
