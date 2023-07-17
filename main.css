@@ -12,12 +12,12 @@ a {
     color:white;
 }
 
-.brasaoetitulo{
-    background-image: url(images/capa.gif.png);
+#brasaoetitulo{
+    background-image: url(images/background1.gif);
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
-    display: grid;
+   
     grid-template-areas:
       "botaoMenu brasao nav-botoes";    
     grid-template-columns: 1fr 1fr 1fr;  
