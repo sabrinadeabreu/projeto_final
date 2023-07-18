@@ -435,3 +435,19 @@ footer {
 .letraVerde {
     color:#28555C    
 }
+
+ /*-- Fim  Pagina Quadribol -- */
+
+/*-- Inicio  Pagina Professores -- */
+
+.imagemdiretor{
+    grid-area: titulo;
+    text-align: center;
+}
+
+.frasediretor{
+    grid-area: texto;
+    text-align: justify;
+    font-size: 100%;
+}
+
