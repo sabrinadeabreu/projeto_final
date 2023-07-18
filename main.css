@@ -455,12 +455,14 @@ footer {
       display: inline-block;
     margin-top: 20px;
     margin-right: 20px;
-    text-align: center;
+    margin-left: 80px;
+    text-align: left;
 }
 
 .imagem-professores2  {
       display: inline-block;
     margin-top: 20px;
-    margin-right: 20px;
-    text-align: center;
+    margin-left: 20px;
+    margin-right: 80px;
+    text-align: right;
 }
