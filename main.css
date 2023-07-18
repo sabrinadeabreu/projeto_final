@@ -453,11 +453,36 @@ footer {
 
 .imagem-professores1  {
       display: inline-block;
-    margin-right: 20px; 
+    margin-right: 40px;
+    text-align: center;
 }
 
 .imagem-professores2  {
       display: inline-block;
-    margin-right: 20px; 
+    margin-right: 40px;
+    text-align: center;
 }
 
+.professor1 {
+    margin-top: 20px;
+}
+
+.professor2 {
+    margin-top: 20px;
+}
+
+.professor3 {
+    margin-top: 20px;
+}
+
+.professor4 {
+    margin-top: 20px;
+}
+
+.professor5 {
+    margin-top: 20px;
+}
+
+.professor6 {
+    margin-top: 20px;
+}
