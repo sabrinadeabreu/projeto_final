@@ -447,7 +447,15 @@ footer {
 
 .frasediretor{
     grid-area: texto;
-    text-align: left;
+    text-align: right;
     font-size: 100%;
+}
+
+.imagem-professores1  {
+      display: inline-block;
+}
+
+.imagem-professores2  {
+      display: inline-block;
 }
 
