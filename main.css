@@ -451,13 +451,13 @@ footer {
     font-size: 100%;
 }
 
+.imagens{
+    margin: 30px;
 .imagem-professores1  {
       display: flex;
-    margin-right: 50px;
-    justify-content: center;
+       justify-content: center;
 }
 .imagem-professores2  {
     display: flex;
-    margin-right: 50px;
-    justify-content: center;
+      justify-content: center;
 }
