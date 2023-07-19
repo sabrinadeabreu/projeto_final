@@ -454,8 +454,10 @@ footer {
 .imagem-professores1  {
       display: inline-block;
     margin-right: 50px;
+    justify-content: center;
 }
 .imagem-professores2  {
     display: inline-block;
     margin-right: 50px;
+    justify-content: center;
 }
