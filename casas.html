@@ -1,59 +1,122 @@
 <!DOCTYPE html>
 <html>
 <!-- Padrao de Cabecalho em todas as Paginas -->
-    <head>
-        <title>Hogwarts School</title>
-        <link rel="shortcut icon" href="icon_hogwarts.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
-        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
+<head>
+    <title>Hogwarts:Casas</title>
+    <link rel="shortcut icon" href="icon_hogwarts.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+     <!-- CDN do Bootstrap do CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- CDN da biblioteca do Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+    <!-- CDN da biblioteca do Popper  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+    <!-- CDN do Bootstrap do JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
     </head>
     <body>
-        <header>
-            <div class="brasaoetitulo">
-                <div id="botaoMenu">
-                    <button id="iconeMenu"><img src="images\menu.png" alt="icone menu"/></button>
-                </div>
-                <img src="images/brasao.png" alt="brasao header" id="brasaoCentro"/>
-                <div id="botoesHeader">
-                    <span id="botaoExAluno"><a href="">Ex-aluno</a></span>
-                    <span id="botaoVisitante"><a href="">Visitante</a></span>
-                    <span id="botaoAlunos"><a href="">Alunos</a></span>
-                    <span id="botaoIngresso"><a href="ingresso.html"><button><img src="images\Botaoingresso.png" alt="botao ingresso"></button></a></span>
+
+<!-- Calling jquery first -->
+<script language="JavaScript" type="text/javascript" src="scripts/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<!-- Carousel -->
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function(){
+$('.carousel').carousel({
+interval: 2000
+})
+});    
+</script> 
+        
+        <div class="container-fluid" id="brasaoetitulo">
+        
+            <div class="container-fluid; fixed-top;">
+                <div class="container">
+                  <div class="row">
+                    <div class="col col-2">
+                        <button class="btn-primary" style="color: white; background-color: #892424;">
+                        Menu
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-link" style="color: white;">Ex-Alunos</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-link" style="color: white;">Visitantes</button>
+                       
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-link" style="color: white;">Alunos</button>
+                       
+                    </div>
+                    <div class="col">
+                        <button class="btn-primary" style="color: white; background-color: #892424;">
+                        Ingresso
+                        </button>
+                    </div>
+
                 </div>
             </div>
-            <div id="linksDeInfo">
-                <div>
-                    <a id="ingresso" class="letraBranca" href="ingresso.html">Ingressar agora</a>
-                </div>
-                <div>
-                    <a class="letraBranca" href="contato.html">Pedir Informações</a>
-                </div>
-                <div>
-                    <a class="letraBranca" href="contato.html">Agendar uma visita</a>
-                </div>
-                
-            </div>
+        </div>
+    </div>
 
 <!-- Inicio da Pagina Casas -->
 
 
-        <section class="container1" >
+        <section class="container-fluid; fixed-center;" >
 
             <div class="TituloCasas">
                 <b> CASAS </b> 
-            </div>       
-            <div class="BoxImagem">
-                <img src = "images/bandeiras4casas.avif" alt="Bandeirolas"/>
+            </div> 
+                  
+            <div class="container-fluid">
+                <!--<img src = "images/bandeiras4casas.avif" alt="Bandeirolas"/>-->            
+                
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
+
+    <div class="BoxTxt" style="background-color: #28555C; color: white;">
+        Você é Grifinória? Você é Lufa-Lufa? Você é Sonserina? Você é Corvinal?
+            <br><br>
+        Agora, estamos assumindo que você está mais do que familiarizado com as quatro casas de Hogwarts, mas aqui está uma atualização rápida, apenas por precaução.
+    </div>
+
+    <div class="carousel-inner" style="background-color: #28555C" >
+      <div class="carousel-item active">
+        <img src="images/grifinoria-bg.png" class="w-45" alt="leao">
+      </div>
+      <div class="carousel-item">
+        <img src="images/LufaLufa-bg.png" class="w-45" alt="guaxinim">
+      </div>
+      <div class="carousel-item">
+        <img src="images/corvinal-bg.png" class="w-45" alt="corvo">
+      </div>
+      <div class="carousel-item">
+        <img src="images/sonserina-bg.png" class="w-455" alt="serpente">
+      </div>
+    </div>
+  </div>
+                
+                
             </div>
 
-            <div class="BoxTxt">
-                Você é Grifinória? Você é Lufa-Lufa? Você é Sonserina? Você é Corvinal?
-                    <br><br>
-                Agora, estamos assumindo que você está mais do que familiarizado com as quatro casas de Hogwarts, mas aqui está uma atualização rápida, apenas por precaução.
-            </div>
+
 
 <hr>
                 <div class="GRIF">
@@ -76,10 +139,10 @@
                 </div>
 <hr>
 
-                <div class="LUF">
+                <div class="LUF" style="background-color: #28555C">
 
                     <div class="ImgLuf">
-                        <img src = "images/LufaLufa.jpeg" alt="guaxinim"/>
+                        <img src = "images/LufaLufa-bg.png" alt="guaxinim"/>
                     </div>
 
                     <div class="TxtLuf">
@@ -115,10 +178,10 @@
 
                 </div>
 <hr>
-                <div class="SONS">
+                <div class="SONS" style="background-color: #28555C">
 
                     <div class="ImgSons">
-                        <img src = "images/sonserina.jpeg" alt="serpente"/>
+                        <img src = "images/sonserina-bg.png" alt="serpente"/>
                     </div>
 
                     <div class="TxtSons">
@@ -135,34 +198,56 @@
                 </div>
 <hr>
 
-<div class=" BannerRodape">
-    <img src="images/greatHalllHP.jpg" alt="brasao da escola">
-</div>
-     
+    
 <!-- Fim da Pagina Casas -->
 
-<!-- Padrao de Cabecalho em todas as Paginas -->
+<!-- Padrao de Rodapé em todas as Paginas -->
 
-        <footer>
-            <div>
-                <img src="images/brasao.png" alt="brasao da escola">
-            </div>
-            <div>
-                <p>Hogwarts Magia e Bruxaria S/A</p><br>
-                <p>Todos os direitos reservados</p><br>
-                <p>Mapa do site</p>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="">Ex-alunos</a></li>
-                    <li><a href="">Alunos</a></li>
-                    <li><a href="">O castelo</a></li>
-                    <li><a href="contato.html">Pedir Informações</a></li>
-                    <li><a href="contato.html">Agendar uma visita</a></li>
-                    <li><a href="ingresso.html">Junte-se a nós</a></li>
-                </ul>
-            </div>
-        </footer>
+<footer class="row" style="background-color: #28555C; color: white;">
+
+            
+            
+    <div class="col">
+      <div style="margin: 24px 32px;">
+         <img src="images/brasao.png" alt="brasao da escola">
+         <p style="font-size: 16px;">Hogwarts Magia e Bruxaria S/A</p>
+         <p style="font-size: 12px;">Todos os direitos reservados</p>
+         
+      </div>
+      <div>
+         
+      </div>
+    </div> 
+   <div class="col">  
+
+     <div class="container" style="margin: 24px 32px;">
+         
+        <p>Mapa do site</p>     
+                        
+        <div class="row">
+            <a href="" class="col">Ex-alunos</a>
+            <a href="" class="col">Alunos</a>
+        </div>
+        <div class="row">
+            <a href="" class="col">O castelo</a>
+            <a href="contato.html" class="col">Pedir Informações</a>
+        </div>
+        
+        <div class="row">
+            
+            <a href="contato.html" class="col">Agendar uma visita</a>
+            <a href="ingresso.html" class="col">Junte-se a nós</a>
+        </div>  
+        
+        <div class="row">
+            
+            <a href="casas.html" class="col">Conheça as Casas</a>
+            <a href="professores.html" class="col">Nossos Professores</a>
+        </div> 
+     </div>
+
+    </div>  
+ </footer>
 
     </body>
 </html>
