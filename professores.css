@@ -1,0 +1,10 @@
+#professores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: flex-start;
+  row-gap: 100px;
+}
+

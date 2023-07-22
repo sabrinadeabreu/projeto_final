@@ -15,7 +15,19 @@ a {
 li {
     color: white;
 }
-#brasaoetitulo{
+
+#brasaoetitulosemimagem{
+    background-color: #83737B;
+    height: 150px;
+   
+    grid-template-areas:
+      "botaoMenu brasao nav-botoes";    
+    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-rows: 100px;
+    justify-content: center;
+}
+
+#brasaoetitulocomimagem{
     background-image: url(images/background1.gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -331,94 +343,7 @@ button{
 
  /*-- Fim  Pagina Casas -- */
 
-/*-- Inicio  Pagina Quadribol -- */
-.grade {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr, 8fr, 1fr;
-    border:solid red
-}
 
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    border:solid green
-}
-
-.secao {
-    display: grid;
-    grid-template-areas:
-        "titulo titulo"
-        "texto imagem"
-        "botao botao";
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
-    border:solid pink;
-    grid-column-gap: 50px;
-    grid-row-gap: 10;
-    justify-items: stretch;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-}
-
-.titulo-secao{
-    grid-area: titulo;
-    text-align: center;
-    border:solid black
-}
-
-.texto-secao{
-    grid-area: texto;
-    text-align: justify;
-    border:solid black;
-    justify-self: baseline;
-    font-size: 150%;
-}
-
-.imagem-secao{
-    grid-area: imagem;
-    border:solid black;
-    justify-self: flex-start;
-}
-
-.botao-secao {
-    grid-area: botao;
-    border:solid black;
-    justify-self: center;
-}
-
-footer {
-    grid-area: footer;
-}
-
-.branca{
-    background-color: white;
-    color:#28555C
-}
-
-.verde{
-    background-color: #28555C;
-    color:white;
-}
-
-.letraVerde {
-    color:#28555C    
-}
-
- /*-- Fim  Pagina Quadribol -- */
 
 /*-- Inicio  Pagina Professores -- */
 
