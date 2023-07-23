@@ -7,7 +7,6 @@
         "footer";
     grid-template-columns: 100%;
     grid-template-rows: 1fr, 8fr, 1fr;
-    border:solid red
 }
 
 header {
@@ -18,7 +17,6 @@ main {
     grid-area: main;
     display: flex;
     flex-direction: column;
-    border:solid green
 }
 
 .secao {
@@ -29,7 +27,6 @@ main {
         "botao botao";
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
-    border:solid pink;
     grid-column-gap: 50px;
     grid-row-gap: 10;
     justify-items: stretch;
@@ -44,20 +41,18 @@ main {
 .titulo-secao{
     grid-area: titulo;
     text-align: center;
-    border:solid black
 }
 
 .texto-secao{
     grid-area: texto;
     text-align: justify;
-    border:solid black;
     justify-self: baseline;
     font-size: 150%;
 }
 
 .imagem-secao{
     grid-area: imagem;
-    border:solid black;
+    width: 100px;
     justify-self: flex-start;
 }
 
@@ -91,4 +86,21 @@ footer {
 
 .letraVerde {
     color:#28555C    
+}
+
+.centralizado {
+    display: grid;
+    grid-template-areas: 
+        "vazio" "card" "vazio";
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: center;
+    justify-items: stretch;
+    height: 300px;
+    
+}
+
+.card-do-bootstrap {
+    grid-area: card;
+    justify-self: center;
+
 }
