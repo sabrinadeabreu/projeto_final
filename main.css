@@ -1,5 +1,5 @@
 *{
-    font-family: 'Jacques Francois', serif;
+    font-family: 'Jacques Francois', serif !important;
     text-decoration: none;
     margin: 0px 0px;    
 }
@@ -15,6 +15,70 @@ a {
 li {
     color: white;
 }
+
+.accordion{
+    margin: 40px 0;
+  }
+  .accordion .item {
+      border: none;
+      margin-bottom: 50px;
+      background: none;
+  }
+  .t-p{
+    color: #302f2f;
+    padding: 40px 30px 0px 30px;
+  }
+  .accordion .item .item-header h2 button.btn.btn-link {
+      background: #D9D9D9;
+      color: #6B1930;
+      border-radius: 16px;
+      
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1;
+      text-decoration: none;
+  }
+  .accordion .item .item-header {
+      border-bottom: none;
+      background: transparent;
+      padding: 0px;
+      margin: 2px;
+  }
+  
+  .accordion .item .item-header h2 button {
+      color: white;
+      font-size: 20px;
+      padding: 15px;
+      display: block;
+      width: 100%;
+      text-align: left;
+      border-radius: 8px;
+  }
+  
+  .accordion .item .item-header h2 i {
+      float: right;
+      font-size: 30px;
+      color: #892424;
+      background-color: rgb(121, 121, 121);
+      border-radius: 8px;
+      width: 60px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+  }
+  
+  button.btn.btn-link.collapsed i {
+      transform: rotate(0deg);
+  }
+  
+  button.btn.btn-link i {
+      transform: rotate(180deg);
+      transition: 0.5s;
+  }
+  
+
 
 #brasaoetitulosemimagem{
     background-color: #83737B;
@@ -32,6 +96,19 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
+   
+    grid-template-areas:
+      "botaoMenu brasao nav-botoes";    
+    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-rows: 100px;
+    justify-content: center;
+}
+
+#brasaoetitulocomimagem2{
+    background-image: url(images/backgroundPaginas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
    
     grid-template-areas:
       "botaoMenu brasao nav-botoes";    
@@ -107,7 +184,7 @@ li {
 
 
 
-button {
+.button {
     border:none;
     background-color:#892424;
     border-radius: 8px;
@@ -162,7 +239,7 @@ button {
 
 
 
-button{
+.button{
     padding: 0px;
     margin: 0px;
     width: 148px;
