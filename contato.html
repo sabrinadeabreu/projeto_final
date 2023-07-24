@@ -1,93 +1,197 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Contato</title>
-        <link rel="shortcut icon" href="icon_hogwarts.png">
+<!-- Padrao de Cabecalho em todas as Paginas -->
+<head>
+    <title>Hogwarts:Contato</title>
+    <link rel="shortcut icon" href="images/faviconHP.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+     <!-- CDN do Bootstrap do CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- CDN da biblioteca do Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+    <!-- CDN da biblioteca do Popper  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+    <!-- CDN do Bootstrap do JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
     </head>
 
     <body>
-        <header>        
-            <span>
-                <img src="images/brasao.png" alt="brasao header"/>    
-                <span><button><img src="images/bars.png" alt="icone menu"/> Menu </button></span>
-                <ul>
-                    <li>Home</li>
-                    <li>Sobre</li>
-                    <li>Disciplinas</li>
-                    <li>Professores</li>
-                    <li>Casas</li>
-                    <li>Quadribol</li>
-                    <li>Eventos</li>
-                    <li>Notícias</li>
-                </ul>
-            </span>
-            
-            <span><a href="">Ex-aluno</a></span>
-            <span><a href="">Visitante</a></span>
-            <span><a href="">Alunos</a></span>
-            <span><a href="ingresso.html"><button>Ingresso</button></a></span>
 
-            <h1>Contato</h1>
-        </header>        
+       
+<div class="container-fluid" id="brasaoetitulocomimagem">
 
-        <section>
+        
+    <div class="container-fluid; fixed-top;">
+        <div class="container">
+          <div class="row">
+            <div class="col col-2">
+                
+                <button class="btn-primary button" style="color: white; background-color: #892424;">
+                Menu 
+                </button>
+
+                
+                 
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-link button" style="color: white;">Ex-Alunos</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-link button" style="color: white;">Visitantes</button>
+               
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-link button" style="color: white;">Alunos</button>
+               
+            </div>
+            <div class="col">
+                <button class="btn-primary button" style="color: white; background-color: #892424;">
+                Ingresso
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- <div class="container-fluid" style="margin: 0px 0px; padding: 0px 0px;">
+    <img src="images\background1.gif" class="img-fluid, col-12" alt="background" style="margin: 0px 0px; padding: 0px 0px;">
+</div>-->
+
+</div>
+
+<!-- Inicio da Pagina Contato -->
+        
+<section>
             <div>                
                 <div>
                     <div>
-                        <h2>Entre em contato conosco!</h2>
+                        <h2 class="display-2 tituloContato">Entre em contato conosco!</h2>
                     </div>
                     <div>
-                        <p>Nossas corujas fazem o possível para que sua mensagem chegue a nós o mais rápido possível. Mas elas ainda estão sendo treinadas para usar a magia da internet. Por favor, seja paciente. Respondemos em até uma semana para a coruja que indicar abaixo.</p>
+                        <p class="blockquote tituloTxt">Nossas corujas fazem o possível para que sua mensagem chegue a nós o mais rápido possível. Mas elas ainda estão sendo treinadas para usar a magia da internet.<br> 
+                        Por favor, seja paciente. Respondemos em até uma semana para a coruja que indicar abaixo.</p>
                     </div>
-                    <div>
-                        <img src="images/coruja.jpeg" alt="coruja com carta no bico">
+       <section>  
+        
+        <hr>
+        
+        <div class="form-floating mb-3 txtFORM">
+            <input type="text" class="form-control" id="name" placeholder="Fulano da Silva">
+            <label for="floatingInput">Vamos começar com seu nome aqui...</label>
+        </div>
+        
+        <div class="form-floating mb-3 txtFORM">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <label for="floatingInput">Seu melhor email aqui...</label>
+        </div>
+        
+        <div class="form-floating txtFORM">
+            <select class="form-select" id="selection" aria-label="Floating label select example">
+                <option selected>Clique aqui...</option>
+                <option value="VisitaGuiada">Quero Agendar uma Visita Guiada</option>
+                <option value="ProcSelecao">Quero mais informações sobre o processo de seleção</option>
+                <option value="Sirius">Quero saber onde está Sirius Black...</option>
+                <option value="NoA">Nenhuma das anteriores... :(</option>
+            </select>
+            <label for="floatingSelect">Selecione o que mais se aproxima da sua necessidade...</label>
+        </div>
+        
+        
+        <div class="form-floating txtFORM">
+            <textarea class="form-control" placeholder="Escreve mais aqui" id="comments"></textarea>
+            <label for="floatingTextarea">Escreva aqui com mais detalhes sua solicitação...</label>
+        </div>
+<br>
+
+        <div class="col-12 txtFORM d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" >
+        <button type="button" class="btn btn-primary" onclick="salvar()">Enviar sua solicitação</button>
+<hr>
+         </div>
+
+        </section>
+
+<div>
+
+
+
+</div>>
+
+                    <div class="imagensContato">
+                        <img  src="images/coruja.jpeg" alt="coruja com carta no bico">
                     </div>
                 </div>
-                
-                <div>
-                    <form action="">
-                        <div>
-                            <input required="required" placeholder="Insira seu nome" type="text" name="nome" id="nome">
-                        </div>
-                        <div>
-                            <input required="required" placeholder="Insira o nome de sua coruja eletrônica" type="email" name="nome_coruja" id="nome_coruja">
-                        </div>
-                        <div>
-                            <select required="required" name="assunto" id="assunto" placeholder="Assunto">
-                                <option value="">Escolha um assunto</option>
-                                <option value="visita">Quero agendar uma visita</option>
-                                <option value="informacoes">Quero pedir informações</option>
-                            </select>
-                        </div>
-                        <div>
-                            <textarea required="required" placeholder="Mensagem"></textarea>
-                        </div>
-                    </form>
-                </div>
+                            
             </div>
         </section>
 
         
-        <footer>
-            <div>
-                <img src="images/brasao.png" alt="brasao da escola">
-            </div>
-            <div>
-                <p>Hogwarts Magia e Bruxaria S/A</p><br>
-                <p>Todos os direitos reservados</p><br>
-                <p>Mapa do site</p>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="">Ex-alunos</a></li>
-                    <li><a href="">Alunos</a></li>
-                    <li><a href="">O castelo</a></li>
-                    <li><a href="contato.html">Pedir Informações</a></li>
-                    <li><a href="contato.html">Agendar uma visita</a></li>
-                    <li><a href="ingresso.html">Junte-se a nós</a></li>
-                </ul>
-            </div>
-        </footer>
+<!-- Fim da Pagina Contato -->
+
+<!-- Padrao de Rodapé em todas as Paginas -->
+
+<footer class="row" style="background-color: #28555C; color: white;">
+
+            
+            
+    <div class="col">
+      <div style="margin: 24px 32px;">
+         <img src="images/brasao.png" alt="brasao da escola">
+         <p style="font-size: 16px;">Hogwarts Magia e Bruxaria S/A</p>
+         <p style="font-size: 12px;">Todos os direitos reservados</p>
+         
+      </div>
+      <div>
+         
+      </div>
+    </div> 
+   <div class="col">  
+
+     <div class="container" style="margin: 24px 32px;">
+         
+        <p>Mapa do site</p>     
+                        
+        <div class="row">
+            <a href="" class="col">Ex-alunos</a>
+            <a href="" class="col">Alunos</a>
+        </div>
+        <div class="row">
+            <a href="" class="col">O castelo</a>
+            <a href="contato.html" class="col">Pedir Informações</a>
+        </div>
+        
+        <div class="row">
+            
+            <a href="contato.html" class="col">Agendar uma visita</a>
+            <a href="ingresso.html" class="col">Junte-se a nós</a>
+        </div>  
+        
+        <div class="row">
+            
+            <a href="casas.html" class="col">Conheça as Casas</a>
+            <a href="professores.html" class="col">Nossos Professores</a>
+        </div> 
+     </div>
+
+    </div>  
+ </footer>
 
     </body>
+
+    <script src='contato.js'></script>
+
 </html>
