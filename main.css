@@ -302,7 +302,7 @@ li {
 
 .titulos{
 
-    color: black;
+    color: white;
     text-align: center;
     margin: 25px;
     padding: 25px;
@@ -310,6 +310,11 @@ li {
     font-size: 150%;
     
 }
+.BACK{
+    background: rgb(98,34,32);
+    background: linear-gradient(90deg, rgba(98,34,32,1) 10%, rgba(144,94,29,1) 32%, rgba(93,74,55,1) 86%, rgba(35,59,35,1) 100%);
+}
+
 
 .GRIF {
     display: grid;
@@ -326,6 +331,7 @@ li {
 .ImgGrif{
     display: flex;
     color: black;
+    padding-left: 50px;
 }
 
 .TxtGrif{
@@ -334,6 +340,7 @@ li {
     color: black;
     font-size: 115%;
     text-align: center;
+    margin-right: 30px;
 }
 
 .LUF {
@@ -351,6 +358,7 @@ li {
 .ImgLuf{
     display: flex;
     color: black;
+    padding-left: 50px;
 }
 
 .TxtLuf{
@@ -359,6 +367,7 @@ li {
     color: black;
     font-size: 115%;
     text-align: center;
+    margin-right: 30px;
 }
 
 .CORV {
@@ -376,6 +385,7 @@ li {
 .ImgCorv{
     display: flex;
     color: black;
+    padding-left: 50px;
 }
 
 .TxtCorv{
@@ -384,6 +394,7 @@ li {
     color: black;
     font-size: 115%;
     text-align: center;
+    margin-right: 30px;
 }
 .SONS {
     display: grid;
@@ -400,6 +411,7 @@ li {
 .ImgSons{
     display: flex;
     color: black;
+    padding-left: 50px;
 }
 
 .TxtSons{
@@ -407,6 +419,7 @@ li {
     align-items: center;
     font-size: 115%;
     text-align: center;
+    margin-right: 30px;
 
 }
 
@@ -420,7 +433,43 @@ li {
 
  /*-- Fim  Pagina Casas -- */
 
+/*-- Exclusivo Pagina Contato -- */
 
+
+.tituloContato {
+
+    display: flex;
+    font-family: 'Jacques Francois', serif !important;
+    justify-content: center;
+    color: white;
+    margin-top: 15px;
+    background-color: #28555C;
+
+    }
+
+    .tituloTxt {
+
+        display: flex;
+        font-family: 'Jacques Francois', serif;
+        justify-content: center;
+        text-align: center;
+        size: 80%;
+        color: black;
+        margin-top: 15px;
+    
+        }
+
+    .imagensContato {
+        display: flex;
+        flex-grow: 5;
+        justify-content: center;
+                
+    }
+
+    .txtFORM {
+        font-family: 'Jacques Francois', serif;
+        }
+ /*-- Fim  Pagina Contato -- */
 
 /*-- Inicio  Pagina Professores -- */
 
