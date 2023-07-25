@@ -59,6 +59,9 @@ main {
 .botao-secao {
     grid-area: botao;
     justify-self: center;
+    align-self: center;
+    text-align: center;
+    text
     background-color:#892424;
     border-radius: 8px;
     font-size: 15px;
@@ -67,7 +70,6 @@ main {
     margin: 0px;
     width: 148px;
     height: 50px;
-
 }
 
 footer {
